@@ -1,0 +1,42 @@
+:root {
+    --verde-principal: #00A650;
+    --fonte-padrao: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    font-size: 1rem;
+}
+
+.main-card {
+    
+}
+
+
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/Open_Sans/static/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Special Gothic';
+    src: url('fonts/Special_Gothic/SpecialGothic-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
