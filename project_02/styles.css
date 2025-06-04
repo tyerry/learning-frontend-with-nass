@@ -1,6 +1,10 @@
 :root {
-    --verde-principal: #00A650;
-    --fonte-padrao: 'Montserrat', sans-serif;
+    --vermelho-ifood: #d9002f;
+    --cinza-escuro: #3f3f3f;
+    --cinza-medio: #646464;
+    --cinza-claro: #bebebe;
+    --preto: #000000;
+    --fonte-padrao: 'BeVietnamPro', sans-serif;
 }
 
 * {
@@ -11,14 +15,113 @@
 
 body {
     font-family: var(--fonte-padrao);
-    font-size: 1rem;
+    font-size: 0.7rem;
 }
 
 .main-card {
-    
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background-color: #fff;
+    border-radius: 5px;
+    width: 50%;
+    margin: 20px auto;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
 
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.button-rounded {
+    display: inline-block;
+    padding: 16px 32px;
+    background-color: white;
+    color: var(--cinza-medio);
+    border: 1px solid var(--cinza-claro);
+    border-radius: 32px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.button-rounded:hover {
+    background-color: white;
+    border-color: var(--vermelho-ifood);
+    color: var(--vermelho-ifood);
+}
+
+.button-rounded:active {
+    background-color: var(--vermelho-ifood);
+    border-color: var(--vermelho-ifood);
+    color: white;
+}
+
+.button-search {
+    display: inline-block;
+    padding: 16px 32px;
+    background-color: var(--vermelho-ifood);
+    color: white;
+    border: 1px solid var(--cinza-claro);
+    border-radius: 6px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.button-search:active {
+    background-color: white;
+    border-color: var(--vermelho-ifood);
+    color: var(--vermelho-ifood);
+}
+
+.icon-style {
+    color: var(--cinza-medio);
+    font-size: 1.2rem;
+    width: 1.5rem;
+}
+
+.checkbox-item {
+    color: var(--cinza-medio);
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    user-select: none;
+    width: 100%;
+}
+
+.checkbox-container label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 100%;
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: 26px;
+    height: 26px;
+    accent-color: var(--cinza-medio);
+}
+
+.checkbox-container input[type="checkbox"]:checked {
+    accent-color: var(--vermelho-ifood);
+}
 
 @font-face {
     font-family: 'Open Sans';
@@ -37,6 +140,27 @@ body {
 @font-face {
     font-family: 'Montserrat';
     src: url('fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BeVietnamPro';
+    src: url('fonts/Be_Vietnam_Pro/BeVietnamPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('fonts/Montserrat/static/Outfit-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('fonts/Montserrat/static/Quicksand-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
