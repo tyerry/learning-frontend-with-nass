@@ -9,5 +9,5 @@
 ##### Lista de Projetos
 
 - project_01: Recriada uma parte específica de uma tela do Mercado Livre usando apenas HTML e CSS.
-- project_02: Em andamento.
+- project_02: Recriada uma parte de filtros do iFood usando apenas HTML e CSS.
 - project_03: Em andamento.
